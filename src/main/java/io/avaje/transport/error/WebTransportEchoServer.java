@@ -86,6 +86,8 @@ public class WebTransportEchoServer {
           });
 
       session.open();
+      //uncomment to make it work
+      //Thread.sleep(500) 
       System.out.println("Session " + session.getSessionId() + " opened to " + serverUrl);
       WebTransportStream bidirectionalStream = session.createBidirectionalStream();
 
